@@ -22,13 +22,14 @@ requirements:
     - numpy
     - cffi
     - eccodes >={{ eccodes_version }}
+    - findlibs
   run:
     - python
     - {{ pin_compatible('numpy') }}
     - cffi
     - attrs
     - eccodes >={{ eccodes_version }}
-
+    - findlibs
 test:
   imports:
     - eccodes
